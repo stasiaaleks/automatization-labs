@@ -1,0 +1,19 @@
+[ {
+  "reportDate" : "2025-06-05",
+  "temperatureCelsius" : 21.5,
+  "humidityPercent" : 69.0,
+  "windDirection" : "East",
+  "stormWarning" : false
+}, {
+  "reportDate" : "2025-06-05",
+  "temperatureCelsius" : 17.8,
+  "humidityPercent" : 84.0,
+  "windDirection" : "North-East",
+  "stormWarning" : false
+}, {
+  "reportDate" : "2025-06-05",
+  "temperatureCelsius" : 14.2,
+  "humidityPercent" : 91.1,
+  "windDirection" : "South-West",
+  "stormWarning" : true
+} ]

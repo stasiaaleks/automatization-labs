@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'fish.payara.micro-gradle-plugin' version '2.1.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.11.0'
+}
+
+sourceCompatibility = '21'
+targetCompatibility = '21'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compileOnly('jakarta.enterprise:jakarta.enterprise.cdi-api:4.1.0')
+    compileOnly('jakarta.ws.rs:jakarta.ws.rs-api:4.0.0')
+    compileOnly('jakarta.servlet:jakarta.servlet-api:6.1.0')
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+payaraMicro {
+    // Change this to a stable Payara Micro 6.x version
+    // For example, the latest one from 2024
+    payaraVersion = '6.2024.5' // <-- Try this version, or another stable 6.x release
+
+    deployWar = true
+    useUberJar = true
+}
+test {
+    useJUnitPlatform()
+}
