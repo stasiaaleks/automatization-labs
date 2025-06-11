@@ -1,0 +1,5 @@
+rootProject.name = '03Aleksieienko'
+
+include 'game-service'
+include 'game-history'
+include 'history-export'

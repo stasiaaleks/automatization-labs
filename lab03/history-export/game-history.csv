@@ -1,0 +1,5 @@
+"Time","Player","Computer","Outcome"
+"2025-06-11 23:45:40","Rock","Scissors","WIN"
+"2025-06-11 23:45:40","Paper","Scissors","LOSS"
+"2025-06-11 23:45:40","Scissors","Scissors","DRAW"
+"2025-06-11 23:45:40","Rock","Rock","DRAW"

@@ -1,0 +1,37 @@
+{
+  "gameHistory" : [ {
+    "gameResult" : {
+      "playerMove" : "ROCK",
+      "computerMove" : "SCISSORS",
+      "result" : "WIN"
+    },
+    "formattedTime" : "2025-06-11 23:45:40"
+  }, {
+    "gameResult" : {
+      "playerMove" : "PAPER",
+      "computerMove" : "SCISSORS",
+      "result" : "LOSS"
+    },
+    "formattedTime" : "2025-06-11 23:45:40"
+  }, {
+    "gameResult" : {
+      "playerMove" : "SCISSORS",
+      "computerMove" : "SCISSORS",
+      "result" : "DRAW"
+    },
+    "formattedTime" : "2025-06-11 23:45:40"
+  }, {
+    "gameResult" : {
+      "playerMove" : "ROCK",
+      "computerMove" : "ROCK",
+      "result" : "DRAW"
+    },
+    "formattedTime" : "2025-06-11 23:45:40"
+  } ],
+  "statistics" : {
+    "totalGames" : 4,
+    "wins" : 1,
+    "losses" : 0,
+    "draws" : 2
+  }
+}

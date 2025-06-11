@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+allprojects {
+    group = 'com.game'
+    version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        testImplementation platform('org.junit:junit-bom:5.10.0')
+        testImplementation 'org.junit.jupiter:junit-jupiter'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+tasks.register('generateAllReports') {
+    group = 'game'
+    description = 'Generate all reports'
+
+    dependsOn 'history-export:generateReport'
+
+    doLast {
+        println "All module reports generated!"
+    }
+}
+
+tasks.register('showAllModulesInfo') {
+    group = 'game'
+    description = 'Shows info for all modules'
+
+    dependsOn "history-export:showGameProjectInfo"
+}

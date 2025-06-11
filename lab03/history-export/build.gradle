@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'application'
+    id 'game-stats-plugin'
+}
+
+application {
+    mainClass = 'com.game.HistoryExporter'
+}
+
+dependencies {
+    implementation project(':game-service')
+    implementation project(':game-history')
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.0.1")
+    implementation("com.opencsv:opencsv:3.7")
+}
+
+gameStats {
+    reportFormat = 'txt'
+    includeTimestamp = true
+    outputDir = 'build/reports/custom-game-stats'
+}

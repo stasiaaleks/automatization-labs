@@ -1,0 +1,12 @@
+ROCK-PAPER-SCISSORS GAME HISTORY
+
+Total Games: 4
+Wins: 1
+Losses: 0
+Draws: 2
+
+History:
+[2025-06-11 23:45:40] Player: Rock, Computer: Scissors, Result: WIN
+[2025-06-11 23:45:40] Player: Paper, Computer: Scissors, Result: LOSS
+[2025-06-11 23:45:40] Player: Scissors, Computer: Scissors, Result: DRAW
+[2025-06-11 23:45:40] Player: Rock, Computer: Rock, Result: DRAW
